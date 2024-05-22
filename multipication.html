@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="input1">
+        <input type="text" id="input2">
+        <button onclick="multiply()">Result</button>
+        <h4 id="h4"></h4>
+    </div>
+</body>
+
+</html>
+<script>
+    let input1 = document.getElementById("input1")
+    let input2 = document.getElementById("input2")
+
+    function multiply() {
+        for (let i = input1.value; i <= input2.value; i++) {
+            for (let k = 1; k <= 12; k++) {
+                h4.innerHTML += `<P>${i} * ${k} = ${i * k}</P>`
+            }
+        } 
+    }
+
+</script>
